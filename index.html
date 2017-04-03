@@ -1,0 +1,138 @@
+<html>
+<head>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+</style>
+
+<title>Trump Golf Counter</title>
+
+
+
+<link href="style.css" type="text/css" rel="stylesheet">
+
+
+
+</head>
+
+
+
+<body>
+<script>
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+
+if(dd<10) {
+    dd='0'+dd
+} 
+
+if(mm<10) {
+    mm='0'+mm
+} 
+
+today1 = mm+'/'+dd+'/'+yyyy;
+
+
+</script>
+<script>
+var golfdays = 14;
+var golfcost = 3000000;
+var golfcurrent = golfcost * golfdays;
+var golfcurrentComas = numberWithCommas(golfcurrent)
+var golfCostpred;
+var golfDaypred;
+/*
+Count up from any date script-
+By JavaScript Kit (www.javascriptkit.com)
+Over 200+ free scripts here!
+*/
+
+var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+
+function countup(yr,m,d){
+var today=new Date()
+var todayy=today.getYear()
+if (todayy < 1000)
+todayy+=1900
+var todaym=today.getMonth()
+var todayd=today.getDate()
+var todaystring=montharray[todaym]+" "+todayd+", "+todayy
+var paststring=montharray[m-1]+" "+d+", "+yr
+var difference=(Math.round((Date.parse(todaystring)-Date.parse(paststring))/(24*60*60*1000))*1)
+
+var golfAVG = golfdays/difference;
+ golfDaypred = golfAVG*1460;
+ golfCostpred = numberWithCommas(golfDaypred*golfcost);
+
+}
+//enter the count up date using the format year/month/day
+countup(2017,1,20)
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+</script>
+
+
+
+
+	<div id = "header">
+	<h1 class="simple">
+	Golf With Donald
+	</h1>
+	
+	</div>
+	
+	<div id = "mainArea">
+	
+	<h3>As of <p id="todaysdate"></p> the number of times Donald has gone golfing to Mar de lago since he took office. . .</h3>
+	<h2 class="otto"><p id="daysgolfed"></p></h2>
+	
+	<h3> Total travel and security expenses for these trips have cost taxpayers approx. . .  </h3>
+	<h2 class ="otto"><p id ="golfcost"></p></h2>
+	
+	
+		
+	
+		<div id = "mainArea2">
+		<h3> The number of times he will have golfed over his 4 year presidency.  </h3>
+		<h2 class = "otto"><p id="golfPredictedDays"></p></h2>
+		<h3> Costing taxpayers approx. . . </h3>
+		<h2 class ="otto"><p id ="predictedcost"></p></h2>
+		</div>
+		<h3> so while Trump cuts our Enviromental budget by . . .</h3>
+		<h2 class = "otto">$100,000,000</h2>
+		<h3> he will have spent 8x that amount. . . golfing. <h3>
+		
+		<h3> Some relevant tweets. . .</h3>
+		
+			<div id = "tweet">		<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">Can you believe that,with all of the problems and difficulties facing the U.S., President Obama spent the day playing golf.Worse than Carter</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/521813597799067648">October 14, 2014</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">We pay for Obama&#39;s travel so he can fundraise millions so Democrats can run on lies. Then we pay for his golf.</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/522108442514038784">October 14, 2014</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		</div>
+		<h3> Contact: golfwithdonald@gmail.com</h3>
+	</div>
+	
+	
+	<script>
+	 document.getElementById("todaysdate").innerHTML = today1;
+	
+	 document.getElementById("golfcost").innerHTML = "$"+golfcurrentComas;
+	
+	document.getElementById("daysgolfed").innerHTML = golfdays;
+	
+	document.getElementById("predictedcost").innerHTML = "$" + golfCostpred;
+	</script>
+	<script>
+	 document.getElementById("golfPredictedDays").innerHTML = golfDaypred;
+	</script>
+	
+
+</body>
+
+
+</html>
