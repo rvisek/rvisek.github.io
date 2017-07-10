@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <!-- Theme - No Copyright -->
+
+  <title>Should I go to the movies?</title>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" script-name="cooper-black-std" src="http://use.edgefonts.net/cooper-black-std.js"></script>
+
+    <link async href="http://fonts.googleapis.com/css?family=Fredoka%20One" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+<script type="text/javascript" script-name="contrail-one" src="http://use.edgefonts.net/contrail-one.js"></script>
+
+    <style>
+	
+		.polaroid {
+		
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		text-align: center;
+		}
+        .old-tv-screen {
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        width: 200px;
+        height: 150px;
+        position: relative;
+        margin: 20px 0;
+        border: none;
+        -webkit-border-radius: 50% / 10%;
+        border-radius: 50% / 10%;
+        opacity: 0.45;
+
+        text-align: center;
+        text-indent: 0.1em;
+        -o-text-overflow: clip;
+        text-overflow: clip;
+        background: #1abc9c;
+        }
+        .old-tv-screen::before {
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        position: absolute;
+        content:"";
+        top: 10%;
+        right: -5%;
+        bottom: 10%;
+        left: -5%;
+        border: none;
+        -webkit-border-radius: 5% / 50%;
+        border-radius: 5% / 50%;
+        opacity: 0.45
+        color: rgba(0,0,0,1);
+
+        background: #1abc9c;
+        text-shadow: none;
+        }
+        body {
+
+        font: 20px Montserrat, sans-serif;
+
+        line-height: 1.8;
+
+        color: #f5f6f7;
+		
+background: radial-gradient(ellipse at bottom, #607D8B 0%, #090A0F 200%);
+        }
+
+        p {font-size: 16px;}
+
+        .margin {margin-bottom: 45px;}
+
+        .bg-1 {
+
+         /* light gray */
+
+        color: #555555;
+		
+	
+
+        }
+
+        .bg-2 {
+
+        background-color: #f0f0f5; /* light gray */
+
+        color: #555555;
+
+        }
+
+        .bg-3 {
+
+          background: radial-gradient(ellipse at bottom, #607D8B 0%, #090A0F 200%);
+
+        color: #555555;
+
+        }
+
+        .bg-4 {
+
+        background-color: #f0f0f5; /* light gray */
+
+        color: #555555;
+
+        }
+
+        .bg-5 {
+
+        background-color: #000000; /* gray */
+
+        color: #fff;
+
+        }
+
+        .container-fluid {
+
+        padding-top: 20px;
+
+        padding-bottom: 20px;
+
+        }
+
+        .navbar {
+
+        color: #ff8c1a; /* Orange */
+
+     
+
+        border: 0;
+
+        border-radius: 0;
+
+        margin-bottom: 0;
+
+        font-size: 20px;
+
+     
+
+        background-color: #000000; /* gray */
+
+        border-color: #ffffff;
+
+        font: normal 25px/1 "Fredoka One", Helvetica, sans-serif;
+
+      
+
+        }
+
+        .navbar-custom :{
+
+        color: #fffffff;
+
+        background-color: #fffffff; /* gray */
+
+        }
+
+        .navbar-nav  li a:hover {
+
+        color: #fffffff !important; /* White */
+
+        }
+        .navbar-default .navbar-brand {
+        color: #d6d6d6;
+        }
+
+        .long-shadow {
+        display: inline-block;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        padding: 25px;
+        border: none;
+        font: normal 50px/1 "cooper-black-std", Helvetica, sans-serif;
+        color: rgba(255,255,255,1);
+
+        text-align: center;
+        -o-text-overflow: clip;
+        text-overflow: clip;
+        text-shadow: 3px 3px 5px black;
+
+        }
+
+        .long-shadow1 {
+        display: inline-block;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        
+        border: none;
+        font: normal 25px/1 "cooper-black-std", Helvetica, sans-serif;
+
+        color: #747f93;
+
+        text-align: center;
+        -o-text-overflow: clip;
+        text-overflow: clip;
+        text-shadow: 1px 1px 0 #000000 , 2px 2px 0 #000000 , 3px 3px 0 #000000, 1px 1px 1px #000000;
+        }
+        .long-shadow2 {
+        display: inline-block;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        padding: 25px;
+        border: none;
+        font:  normal 40px/1 "Fredoka One", Helvetica, sans-serif;
+        color: #000000 ;
+        position:relative;
+        text-align: center;
+        -o-text-overflow: clip;
+        text-overflow: clip;
+		text-shadow: 1px 1px 1px grey;
+      
+        z-index: 99;
+        }
+        .long-shadow3 {
+        display: inline-block;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        padding: 16px;
+        border: none;
+        font: normal 40px/1 "cooper-black-std", Helvetica, sans-serif;
+        color:rgba(255,255,255,1);
+
+        text-align: center;
+        -o-text-overflow: clip;
+        text-overflow: clip;
+		text-shadow: 2px 2px 3px black;
+       
+        }
+        .long-shadow4 {
+        display: inline-block;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+
+        border: none;
+        font: normal 25px/1 "Fredoka One", Helvetica, sans-serif;
+
+        color: rgba(255,255,255,1);
+
+        text-align: center;
+        -o-text-overflow: clip;
+        text-overflow: clip;
+		text-shadow: 2px 2px 3px black;
+
+        }
+        .long-shadow5{
+        display: inline-block;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        padding: 25px;
+        border: none;
+        font: italic normal normal 25px/1 "Fredoka One", Helvetica, sans-serif;
+        color: rgba(255,255,255,1);
+        text-align: center;
+        -o-text-overflow: clip;
+        text-overflow: clip;
+        text-shadow: 3px 3px 0 #0199d9 , 4px 4px 0 #0199d9 , 5px 5px 0 #0199d9 , 6px 6px 0 #0199d9 , 7px 7px 0 #0199d9 , 8px 8px 0 #0199d9 , 9px 9px 0 #0199d9 , 10px 10px 0 #0199d9 , 11px 11px 0 #0199d9 , 12px 12px 0 #0199d9 , 13px 13px 0 #0199d9 , 14px 14px 0 #0199d9 , 15px 15px 0 #0199d9 , 16px 16px 0 #0199d9 , 17px 17px 0 #0199d9 , 18px 18px 0 #0199d9 , 19px 19px 0 #0199d9 , 20px 20px 0 #0199d9 ;
+        }
+		 .long-shadow6 {
+      
+        
+        border: none;
+        font: normal 20px/1 "cooper-black-std", Helvetica, sans-serif;
+        color:rgba(255,255,255,1);
+
+        text-align: center;
+        -o-text-overflow: clip;
+        text-overflow: clip;
+		text-shadow: 1px 1px 5px black;
+       
+        }
+
+		img {
+    border-radius: 8px;
+}
+.button {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  font: normal 48px/normal "cooper-black-std", Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  text-decoration: normal;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ed0ebc ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.button:hover {
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+}
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+<script>
+
+
+
+
+ratings=[];
+ratings1=[];
+title ="hi";
+ShouldIGo = "ok";
+
+theFilm="";
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://api.themoviedb.org/3/movie/now_playing?region=US&page=1&language=en-US&api_key=d9ad0412b8d04676950f29e78e648a5f",
+  "method": "GET",
+  "headers": {},
+  "data": "{}"
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+  //Json to String
+  var jsonString = JSON.stringify(response);
+ //Parse Json
+ var obj = JSON.parse(jsonString);
+
+  //for loop to push all ratings to an array
+  for(var i = 0; i < obj.results.length;i++){
+  if(obj.results[i].popularity>15){
+
+  ratings.push(obj.results[i].vote_average);
+  }
+  }
+var Go = 0;
+
+  //Finds Max Value in the Ratings Array
+  var indexOfMaxValue = ratings.reduce((iMax, x, i, arr) => x > arr[iMax] ? i : iMax, 0);
+
+
+
+
+  //dispalys
+  //document.body.innerHTML = obj.results[1].title;
+  //document.body.innerHTML = obj.results[1].vote_average;
+	//document.body.innerHTML = ratings;
+
+ title = obj.results[indexOfMaxValue].title;
+
+ // document.body.innerHTML = obj.results[indexOfMaxValue].title + ' ' + obj.results[indexOfMaxValue].vote_average +   ' ' + 'https://image.tmdb.org/t/p/w500' + obj.results[indexOfMaxValue].poster_path;
+
+
+/////////////////IMAGE STUFF///////////////////////////////////////
+  image.src = 'https://image.tmdb.org/t/p/w150' + obj.results[indexOfMaxValue].poster_path;
+  // var imgURL =  'https://image.tmdb.org/t/p/w1000' + obj.results[indexOfMaxValue].poster_path;
+
+
+  
+/////////////////TITLE FOR TOP////////////////////////
+   Titlehigh = obj.results[indexOfMaxValue].title;
+   Ratehigh = Math.round(obj.results[indexOfMaxValue].vote_average *12);
+   
+   
+   ////////////////////Should I GO OR NOTE A SPECIAL CRAZY ALGORITHM /////////////////////////
+       if(Ratehigh > 85){
+  ShouldIGo = "Yes!";
+  theFilm = "The film to see is . .";
+ document.body.style.background = "radial-gradient(ellipse at bottom, #30D15E 0%, #090A0F 200%)";
+  document.getElementById("ShouldIGo").innerHTML = ShouldIGo;
+document.getElementById("theFilm").innerHTML = theFilm;
+
+}
+else if(Ratehigh < 86 && Ratehigh > 75){
+ShouldIGo = "Not Really";
+theFilm = "If you're bored go and see. . .";
+  document.body.style.background = "radial-gradient(ellipse at bottom, #FFEB3B 20%, #090A0F 200%)";
+  document.getElementById("ShouldIGo").innerHTML = ShouldIGo;
+document.getElementById("theFilm").innerHTML = theFilm;
+
+
+}
+else if(Ratehigh < 76 && Ratehigh > 65){
+ShouldIGo = "No Way";
+theFilm = "Dont go, but here is the bad movie to see";
+ document.body.style.background = "radial-gradient(ellipse at bottom, #F44336 0%, #090A0F 200%)";
+  document.getElementById("ShouldIGo").innerHTML = ShouldIGo;
+document.getElementById("theFilm").innerHTML = theFilm;
+
+
+}
+
+
+//////////////////////////////////////////CRAZY??/////////////////////////////
+
+
+document.getElementById("TitleHigh").innerHTML = Titlehigh;
+document.getElementById("RateHigh").innerHTML = Ratehigh;
+///////////////Removing INDEX MAX////////
+ ratings1 = ratings.slice();
+ delete ratings1[indexOfMaxValue]
+ var indexOfMaxValue1 = ratings1.reduce((iMax, x, i, arr) => x > arr[iMax] ? i : iMax, 0);
+//////////////////////////////////////////////
+
+ ////////////TITLE FOR SECOND///////////
+
+ RateSecond = Math.round(obj.results[indexOfMaxValue1].vote_average *12);
+ TitleSecond = obj.results[indexOfMaxValue1].title;
+document.getElementById("TitleSecond").innerHTML = TitleSecond;
+imageSecond.src = 'https://image.tmdb.org/t/p/w150' + obj.results[indexOfMaxValue1].poster_path;
+document.getElementById("RateSecond").innerHTML = RateSecond;
+////////////Removing 2nd
+ratings2 = ratings1.slice();
+ delete ratings2[indexOfMaxValue1]
+ var indexOfMaxValue2 = ratings2.reduce((iMax, x, i, arr) => x > arr[iMax] ? i : iMax, 0);
+ 
+ 
+ ////////////////////////////////////////////////////////////////////
+ 
+ 
+ 
+//////////////TITLE THIRD//////////////////////
+RateThird = Math.round(obj.results[indexOfMaxValue2].vote_average *12);
+ TitleThird = obj.results[indexOfMaxValue2].title;
+document.getElementById("TitleThird").innerHTML = TitleThird;
+imageThird.src = 'https://image.tmdb.org/t/p/w150' + obj.results[indexOfMaxValue2].poster_path;
+document.getElementById("RateThird").innerHTML = RateThird;
+//////////////////////////////////////////////////////////////////////////////////////////////
+var myElement = document.querySelector("#old-tv-screen");
+myElement.style.content = "HELLO"
+
+ 
+
+
+});
+
+
+    </script>
+<script>
+
+</script>
+
+<!-- Navbar -->
+
+<nav class="polaroid navbar navbar-default">
+
+  <div class="container">
+
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+
+        <span class="icon-bar"></span>
+
+        <span class="icon-bar"></span>
+
+        <span class="icon-bar"></span>  
+
+        <span class="icon-bar"></span>  		
+
+      </button>
+
+      <a class="w3-animate-opacity navbar-brand long-shadow6" href="#">MoviesThisWeek?</a>
+
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+
+      <ul class="nav navbar-nav navbar-custom navbar-right">
+
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</nav>
+
+
+
+<!-- First Container -->
+
+<div class=" container-fluid bg-1 text-center">
+
+  <h1 class="long-shadow w3-center w3-animate-top">"Are there any good movies out?"</h1><br>
+    <h2 class="w3-topbar w3-leftbar w3-rightbar w3-bottombar polaroid w3-center w3-animate-left long-shadow3 w3-border-white "id="ShouldIGo"></h2><br>
+
+  <!-- insert code to generate a yes or no answer, if yes we will provide 
+
+  three options we recommend (assuming there are three high quality movies out) -->
+
+
+</div>
+
+
+
+<!-- Second Container -->
+
+<div class=" container-fluid bg-2 text-center">
+
+
+
+  <!-- insert code for our top reccomendation -->
+    <p class="w3-opacity long-shadow1" id="theFilm"></p><br>
+    <h1 class=" polaroid  long-shadow2  w3-round-xxlarge" id="TitleHigh"></h1><br>
+	
+    <image  class="polaroid "id ="image"/><br>
+
+    <h2 class="w3-opacity long-shadow1">Rating</h2><br>
+    <h1 id="RateHigh" class="w3-animate-opacity w3-a polaroid w3-btn long-shadow2 w3-green w3-round-xxlarge" ></h1>
+
+  <p></p>
+
+</div>
+
+
+
+<!-- Third Container (Grid) -->
+
+<div class="container-fluid bg-3 text-center">    
+
+  <p class="w3-opacity long-shadow4">2nd Choice</p><br>
+    <h1 class="polaroid long-shadow3  long-shadow2 w3-white w3-round-xxlarge" id="TitleSecond"></h1><br>
+    <image class="polaroid" id="imageSecond"/><br>
+    <h2 class="w3-opacity long-shadow4">Rating</h2><br>
+    <h1 class="polaroid w3-btn long-shadow2 w3-yellow w3-round-xxlarge"id="RateSecond"></h1>
+  <!-- insert code for our second reccomendation -->
+
+</div>
+
+
+
+<!-- Fourth Container (Grid) -->
+
+<div class="container-fluid bg-4 text-center">    
+
+  <p class="w3-opacity long-shadow1">3rd Choice</p><br>
+    <h1 class=" polaroid  long-shadow2  w3-round-xxlarge" id="TitleThird"></h1><br>
+    <image class="polaroid " id="imageThird"/><br>
+    <h2 class="w3-opacity long-shadow1">Rating</h2><br>
+    <h1 class="polaroid w3-btn long-shadow2 w3-red w3-round-xxlarge" id="RateThird"></h1>
+  <!-- insert code for our third reccomendation -->
+
+</div>
+
+
+
+<!-- Footer -->
+
+<footer class="container-fluid bg-5 text-center">
+
+  
+
+</footer>
+
+
+
+</body>
+
+
+</html>
